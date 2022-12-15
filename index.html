@@ -4,10 +4,10 @@
     <title>Title of the document</title>
   </head>
   <body>
-    <div>
-	<script src="https://hpp.maxpay.com/paymentPage.js" class="pspScript" data-iframesrc="https://hpp.maxpay.com/hpp" data-buttontext="Pay!" data-name="Payment page" data-key="pkTest_OFcypR4XNaCGoIWUPuMSbv5X49rzcpac" data-signature="0a372dd250f264a7f5a1bc010a78992781d23c4a3ea285b907960518abcafd8e" data-type="integrated" data-width="auto" data-height="auto"></script>
-	<form class='pspPaymentForm'></form>
-	<iframe id='psp-hpp-0a372dd250f264a7f5a1bc010a78992781d23c4a3ea285b907960518abcafd8e'></iframe>
-    </div>
+    <form action='https://hpp.maxpay.com/hpp' class='redirect_form' method='post'>
+	<input type='hidden' name='key' value='pkTest_OFcypR4XNaCGoIWUPuMSbv5X49rzcpac'>
+	<input type='hidden' name='signature' value='0a372dd250f264a7f5a1bc010a78992781d23c4a3ea285b907960518abcafd8e'>
+	<button type='submit'>Pay</button>
+    </form>
   </body>
 </html>
